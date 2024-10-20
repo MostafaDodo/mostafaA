@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+     <link rel="stylesheet" href="./css/bootstrap.min.css">
+     <!-- font awsemoe -->
+    <link rel="stylesheet" href="./css/all.min.css">
+      <link rel="stylesheet" href="./css/style.css">
+    <title>Weather App</title>
+</head>
+<body>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="mainNavbar">
+            <div class="container">
+              <a class="navbar-brand" href="#">Weather App</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                 
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Live Cam</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Photos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contcat</a>
+                  </li>
+                  
+                </ul>
+            
+              </div>
+            </div>
+          </nav>
+    <main class="main-container">
+        <div class="container px-3 py-5">
+       <form class="position-relative">
+        <input type="text" name="search" id="search" class=" w-100 rounded-5 bg-main-color mb-5" placeholder="Find Ur Location..."  >
+        <input type="button" value="Find" id="Sumbit" class="position-absolute btnn">
+       </form>
+        <div class="row g-0">
+            <div class="col-md-4 col-sm-12 fcard m-0 rounded-4">
+                <div class="d-flex text-center justify-content-between py-2 px-3 rounded-start text-light bg-main-color"
+                     class="my-auto" id="todayDName">Sunday </p>
+                    <span>
+                        <span class="my-auto" id="todayDNumber">30</span>
+                        <span class="my-auto" id="todayDMonth">May</span>
+                    </span>
+                </div>
+                <div class="item text-start px-3 py-3 pt-5 text-light" id="today">
+                    <p id="todayLocation" class="fs-4">Cairo</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="fs-1 fw-bolder">
+                            <span id="todayTemp">20</span>
+                            <span><sub>o</sub>C</span>
+                        </span>
+                       <img src="./imgs/sun-cloud-vector-icon-weather-260nw-411641872.webp" id="todayImg" alt="">
+                    </div>
+                    <div>
+                        <p id="contdt">sunny</p>
+                    </div>
+                    <footer class="d-flex text-light p-3">
+                        <div class="d-flex me-3">
+                            <i class="fa-solid fa-umbrella umbrella me-2" id="humidity">20</i>
+                        </div>
+                        <div class="d-flex me-3">
+                            <i class="fa-solid fa-wind wind me-2" id="wind">30km</i>
+                        </div>
+                        <div class="d-flex me-3">
+                            <i class="fa-solid fa-compass compass" id="compass">Nine</i>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12  scard  m-0 rounded-4">
+                <div class="text-start text-light py-2 text-center bg-sec-color" id="">
+                    <p class="my-auto nextday" id="tomrrowDName"></p>
+                  
+                </div>
+                <div class="item px-3 p-3 pt-5 text-light text-center" id="tomorrow">
+                    <img src="" class="Timg" alt="">
+                    <h3>
+                        <span class="nextmaptemp"></span>
+                        <span><sup>o</sup>C</span>
+                    </h3>
+                    <h5 class="text-muted">
+                        <span class="nextmintemp">15</span>
+                        <span><sub>o</sub>C</span>
+                    </h5>
+                    <p class="nextcondtext fs-6 text-light-blue">Partly Cloud</p>
+                </div>
+            </div>
+            <div class="col-md-4 fcard col-sm-12  m-0 rounded-4">
+                <div class="text-start text-light py-2 text-center bg-sec-color" id="tomorrowD">
+                    <p class="my-auto nextday" id="tomrrowDName">Friday</p>
+                  
+                </div>
+                <div class="item px-3 p-3 pt-5 text-light text-center" id="tomorrow">
+                  <img src="" class="Timg" alt="">
+                    <h3>
+                        <span class="nextmaptemp"></span>
+                        <span><sup>o</sup>C</span>
+                    </h3>
+                    <h5 class="text-muted">
+                        <span class="nextmintemp">15</span>
+                        <span><sub>o</sub>C</span>
+                    </h5>
+                    <p class="nextcondtext fs-6 text-light-blue">Partly Cloud</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+          <div class="d-flex justify-content-around">
+            <form class="position-relative">
+                <input type="text" name="search" id="search" class=" w-100 rounded-5 bg-main-color mb-5" placeholder="Enter your mail..."  >
+                <input type="button" value="Subscribe" id="Sumbit" class="position-absolute btnn">
+               </form>
+               <ul class="list-unstyled social-icons d-flex gap-2">
+                <li class="d-flex">
+                  <i class="fa-brands fa-facebook"></i>
+                </li>
+                <li>
+                  <i class="fa-brands fa-instagram"></i>
+                </li>
+                <li>
+                  <i class="fa-brands fa-twitter"></i>
+                </li>
+                <li>
+                  <i class="fa-brands fa-linkedin"></i>
+                </li>
+              </ul>
+        </div>
+        </div>
+    </footer>
+
+<script src="./js/main.js"></script>
+</body>
